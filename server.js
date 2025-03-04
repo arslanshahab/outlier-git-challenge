@@ -10,6 +10,12 @@ const server = http.createServer((req, res) => {
   res.end()
 })
 
+// this is a dummy code
+
+function respondHello (req, res) {
+  res.end(JSON.stringify({ msg: 'hello' }))
+}
+
 function respondHello (req, res) {
   res.end(JSON.stringify({ msg: 'hello' }))
 }
